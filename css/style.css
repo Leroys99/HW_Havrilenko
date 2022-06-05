@@ -137,12 +137,44 @@ table {
   border-spacing: 0;
 }
 
+body {
+  margin: 0;
+  padding: 0 ;
+  font-family: "Montserrat";
+}
+
+.container {
+  display: flex;
+  max-width: 1024px;
+  margin: 0 auto;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+
+.box {
+  background: #000000;
+  padding: 50px;
+  flex: 0 1 500px;
+  display: flex;
+  align-items: center;
+}
+
+.text {
+  color: #FFFFFF;
+  font-family: 'Montserrat';
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.data {
+  font-size: 48px;
+  line-height: 59px;
+}
+
 @font-face {
   font-family: "Montserrat";
   src: url(/fonts/static/Montserrat-Regular.ttf);
-}
-body {
-  font-family: "Montserrat";
 }
 
 .text_big {
@@ -202,7 +234,39 @@ body {
 
 /* mobile */
 
-@media only screen and (min-width: 320px) and (max-width: 500px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    margin: 0 48px auto;
+  }
+
+  .box {
+    width: 100%;
+    display: block;
+    flex: none;
+    padding: 48px;
+  }
+
+  .box-margin {
+    margin-bottom: 32px;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .container {
+      margin: 0 20px auto;
+    }
+  
+    .box {
+      width: 100%;
+      display: block;
+      flex: none;
+      padding: 20px;
+    }
+  
+    .box-margin {
+      margin-bottom: 24px;
+    }
+
   .button_black {
     display: block;
     min-width: 335px;
