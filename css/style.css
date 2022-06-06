@@ -144,7 +144,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Montserrat";
-  background: #E5E5E5;
+  background: #e5e5e5;
 }
 
 .logo {
@@ -256,6 +256,7 @@ form.text-area {
   resize: none;
   border: none;
   font-size: 18px;
+  background-color: #e5e5e5;
 }
 .message::placeholder {
   color: rgba(0, 0, 0, 0.5);
@@ -494,10 +495,10 @@ form.text-area {
     }
 
   .slider {
-      width: 100%;
-      margin: 0 auto;
-      max-width: 860px;
-    }
+    width: 100%;
+    margin: 0 auto;
+    max-width: 860px;
+  }
 
   .container {
     margin: 0 48px auto;
@@ -517,10 +518,10 @@ form.text-area {
 
 @media only screen and (min-width: 320px) and (max-width: 768px) {
   .slider {
-      width: 100%;
-      margin: 0 auto;
-      max-width: 760px;
-    }
+    width: 100%;
+    margin: 0 auto;
+    max-width: 760px;
+  }
 
   .slider img {
     width: 100%;
