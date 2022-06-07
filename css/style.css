@@ -295,6 +295,10 @@ form.text-area {
   flex-grow: 0;
 }
 
+#menu-toggle {
+  display: none;
+}
+
 /* tamlet */
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
@@ -307,6 +311,10 @@ form.text-area {
   .nav span,
   .nav input {
     display: block;
+  }
+
+  .nav label {
+    position: absolute;
   }
 
   /* ///////////////////////burger//////////////////////// */
@@ -480,10 +488,10 @@ form.text-area {
 
   .logo {
     position: absolute;
-    text-align: center;
-    margin: 0;
+    margin: 0 auto;
     width: 100%;
     top: 48px;
+    left: 0;
     z-index: 3;
   }
 
@@ -512,7 +520,7 @@ form.text-area {
 
   .slider {
     width: 100%;
-    margin: 0 auto;
+    margin: 192px auto 0;
     max-width: 860px;
   }
   .text-place {
