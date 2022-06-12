@@ -141,7 +141,7 @@ table {
 }
 @font-face {
   font-family: "Montserrat";
-  src: url(/fonts/static/Montserrat-Regular.ttf);
+  src: url(../fonts/static/Montserrat-Regular.ttf);
 }
 body {
   margin: 0 auto;
