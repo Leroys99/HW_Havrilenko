@@ -154,6 +154,10 @@ body {
   text-align: center;
 }
 
+.menubox {
+  margin-bottom: 80px;
+}
+
 .nav ul {
   display: flex;
   justify-content: center;
@@ -163,7 +167,7 @@ body {
 }
 
 .nav li {
-  margin: 0 40px 80px;
+  margin: 0 40px;
 }
 
 .nav a {
@@ -272,10 +276,11 @@ form.text-area {
   resize: none;
   border: none;
   font-size: 18px;
+  padding: 20px;
 }
 .message::placeholder {
   color: rgba(0, 0, 0, 0.5);
-  padding-top: 40px;
+  padding-top: 25px;
 }
 
 .message:focus-visible {
@@ -297,15 +302,9 @@ form.text-area {
 
 .btn-burger {
   display: none;
+  cursor: pointer;
 }
-.btn-close {
-  display: none;
-  position: absolute;
-  top: 48px;
-  right: 60px;
-  border: 0;
-  background: none;
-}
+
 .form_button_menu {
   display: none;
 }
@@ -316,10 +315,22 @@ form.text-area {
     padding: 0 48px;
     margin: 0 auto;
   }
+
+  .header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 53px;
+  }
   .nav label,
   .nav span,
   .nav input {
     display: block;
+  }
+
+  .nav ul {
+    padding-top: 175px;
   }
 
   /* ///////////////////////burger//////////////////////// */
@@ -339,13 +350,22 @@ form.text-area {
     background: none;
     z-index: 10;
   }
-  .btn-close {
-    display: none;
-    position: relative;
-    top: 20px;
-    left: 0px;
-    z-index: 10;
+
+  .btn-burger .burger-icon {
+    display: block;
   }
+  
+  .btn-burger .x-icon {
+    display: none;}
+
+  .btn-close .burger-icon {
+    display: none;
+  }
+
+  .btn-close .x-icon {
+    display: block;
+  }
+
   .menu-open {
     display: inline;
     width: 100%;
@@ -387,7 +407,7 @@ form.text-area {
   }
   .form_button_menu .message::placeholder {
     color: rgba(255, 255, 255, 0.5);
-    padding-top: 40px;
+    padding-top: 25px;
   }
   .button_white {
     font-family: "Montserrat";
@@ -522,5 +542,9 @@ form.text-area {
   .message {
     text-align: center;
     width: 100%;
+  }
+
+  .message::placeholder {
+    padding-top: 0;
   }
 }
