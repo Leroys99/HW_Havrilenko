@@ -243,6 +243,7 @@ form.text-area {
   flex: 0 1 500px;
   display: flex;
   align-items: center;
+  margin-bottom: 25px;
 }
 
 .text {
